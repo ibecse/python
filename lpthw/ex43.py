@@ -136,7 +136,7 @@ class TheBridege(Scene):
             return 'death'
 
         elif action == "slowly place the bomb":
-            
+
 
 class Escapepod(Scene):
 
