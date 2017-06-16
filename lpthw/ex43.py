@@ -13,7 +13,7 @@ class Engine(object):
         self.scene_map = scene_map
 
     def play(self):
-        current_scene = self.scene_map.openning_scene()
+        current_scene = self.scene_map.opening_scene()
         last_scene = self.scene_map.next_scene('finished')
 
         while current_scene != last_scene:
@@ -137,8 +137,17 @@ class TheBridege(Scene):
 
         elif action == "slowly place the bomb":
             print "You point your blaster at the bomb under your arm"
-
-
+            print "and the Gothons put their hands up and start to sweat."
+            print "You inch backward to the door, open it, and the carefully"
+            print "place the bomb on the floor, pointing your blaster at it."
+            print "You then jump back through the door, punch the close button"
+            print "and blast the lock so the Gothons can't get out."
+            print "Now that the bomb is placed you run to the escape pod to"
+            print "get off this thin can."
+            return 'escape_pod'
+        else:
+            print "DOES NOT COMPUTE!"
+            return "the_bridge"
 
 class EscapePod(Scene):
 
@@ -182,10 +191,11 @@ class Map(object):
         'central_corridor': CentralCorridor(),
         'laser_weapon_armory': LaserWeaponArmory(),
         'the_bridge': TheBridege(),
-        'escape_pod': Escapepod(),
+        'escape_pod': EscapePod(),
         'death': Death(),
         'finished': Finished(),
     }
+
     def __init__(self, start_scene):
         self.start_scene = start_scene
 
