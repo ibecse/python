@@ -81,7 +81,7 @@ class CentralCorridor(Scene):
 
         else:
             print "DOES NOT COMPUTE!"
-            return 'central corridor'
+            return 'central_corridor'
 
 class LaserWeaponArmory(Scene):
 
