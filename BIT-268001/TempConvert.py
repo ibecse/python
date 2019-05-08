@@ -1,5 +1,5 @@
 #TempConvert
-TempStr = input("请输入需要转换的温度：")
+TempStr = input("请输入带符号的温度：")
 if TempStr[-1] in ['c','C']:
     F = 1.8*eval(TempStr[0:-1]) + 32
     print("华氏温度为：{:.2f}F".format(F))
