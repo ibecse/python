@@ -1,4 +1,4 @@
-#TempConvert
+# TempConvert
 TempStr = input("请输入带符号的温度：")
 if TempStr[-1] in ['c','C']:
     F = 1.8*eval(TempStr[0:-1]) + 32
