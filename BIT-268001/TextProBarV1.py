@@ -7,5 +7,5 @@ for i in range(scale + 1):
     b = i * '*'
     c = (scale-i) * '.'
     print("{:^3.0f}%[{}->{}]".format(a, b, c))
-    time.sleep(1)
+    time.sleep(0.1)
 print("-----执行结束-----")
