@@ -1,4 +1,4 @@
-# CalBMIV1.PY
+# CalBMIV1.py
 height, weight = eval(input("请输入身高（米）和体重（公斤）（使用逗号分隔开）："))
 bmi = weight / pow(height, 2)
 print("BMI数值为：{:.2f}".format(bmi))
